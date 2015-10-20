@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="app" ng-controller="controller">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src="script.js"></script>
+	<head>
+		<title>{{params.channel}} | {{chartType}} | Builging parameters management system</title>
+	</head>
+	<body>
+
+	<div>
+		{{channels}}
+		<br/>
+		<a href ng-click="setChannel(61381)">61381</a>
+		<br/>
+		<a href ng-click="setChannel(58170)">58170</a>
+		<br/>
+		<a href ng-click="setChart(1)">1</a>
+		<br/>
+		<a href ng-click="setChart(2)">2</a>
+		<iframe width="100%" height="400" style="border: 0px solid #cccccc;" ng-src="{{trustSrc(iframe)}}"></iframe>
+	</div>
+
+	</body>
+</html>
