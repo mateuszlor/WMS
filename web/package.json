@@ -1,0 +1,14 @@
+{
+  "name"         : "WMS",
+  "version"      : "0.0.1",
+  "description"  : "Wireless building management system",
+  "main"         : "server.js",
+  "author"       : "Mateusz Lorencki",
+  "dependencies" : {
+    "express"    : "",
+    "mongoose"   : "",
+    "morgan"     : "",
+    "body-parser": "",
+    "method-override": ""
+    }
+}
