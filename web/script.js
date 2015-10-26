@@ -1,8 +1,8 @@
 // create the module and name it app
 var app = angular.module('app', []);
 
-// create the controller and inject Angular's variables
-app.controller('controller', function($scope, $location, $sce, $http) {
+// create the controller and inject Angular's $scope
+app.controller('controller', function($scope, $location, $sce) {
 	$scope.trustSrc = function(src) {
     	return $sce.trustAsResourceUrl(src);
     }
